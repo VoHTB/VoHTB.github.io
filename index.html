@@ -3,6 +3,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/x-icon" href="imgs/VoHTB-logo_1300x1300.png">
 
+<style>
+  :root {
+    --cube-30: #6ca200;
+    --cube: #9fef00;
+    --background: #0a121f;
+  }
+
+  * {margin:0; padding:0;}
+
+  header {text-align: center; padding: 5vh 0 5vh 0; background-image: url("imgs/VoHTB-banner_background.png"); color: var(--cube); border-bottom: 1px var(--cube-30) dotted;}
+  #greeting {text-align: center; color: var(--cube-30); margin: 5vh 0}
+
+  body {background-color: var(--background);}
+
+  table {width: 50vw; margin: 5vh 25vw; border: 1px var(--cube-30) solid; padding: 10px; border-radius: 10px;}
+  table * {color: var(--cube)}
+  table th {color: var(--cube-30)}
+  th {text-align: left;}
+
+  footer {position: fixed; bottom:0; width:100vw; height: 15vh; border-top: 1px var(--cube-30) dotted; background-image: url("imgs/VoHTB-banner_background.png"); background-position: bottom;}
+  #vohtb-logo {height: 10vh; border-radius: 50%; border: 3px var(--cube-30) solid; position: absolute; bottom: 20px; right: 20px;}
+  #kofi-button {position: absolute; bottom: 20px; left: 20px;}
+
+  .download-button {width: 20px; cursor: pointer;}
+</style>
 
 <html lang="en">
   <title>The Voice of Hack The Box Homepage</title>
@@ -47,28 +72,3 @@
   </footer>
 </html>
 
-<style>
-  :root {
-    --cube-30: #6ca200;
-    --cube: #9fef00;
-    --background: #0a121f;
-  }
-
-  * {margin:0; padding:0;}
-
-  header {text-align: center; padding: 5vh 0 5vh 0; background-image: url("imgs/VoHTB-banner_background.png"); color: var(--cube); border-bottom: 1px var(--cube-30) dotted;}
-  #greeting {text-align: center; color: var(--cube-30); margin: 5vh 0}
-
-  body {background-color: var(--background);}
-
-  table {width: 50vw; margin: 5vh 25vw; border: 1px var(--cube-30) solid; padding: 10px; border-radius: 10px;}
-  table * {color: var(--cube)}
-  table th {color: var(--cube-30)}
-  th {text-align: left;}
-
-  footer {position: fixed; bottom:0; width:100vw; height: 15vh; border-top: 1px var(--cube-30) dotted; background-image: url("imgs/VoHTB-banner_background.png"); background-position: bottom;}
-  #vohtb-logo {height: 10vh; border-radius: 50%; border: 3px var(--cube-30) solid; position: absolute; bottom: 20px; right: 20px;}
-  #kofi-button {position: absolute; bottom: 20px; left: 20px;}
-
-  .download-button {width: 20px; cursor: pointer;}
-</style>
