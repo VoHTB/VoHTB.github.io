@@ -1,6 +1,72 @@
 <!DOCTYPE html>
-<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html lang="en">
+  <title>The Voice of Hack The Box Homepage</title>
+  <header>
+    <h1>The Voice of Hack The Box</h1>
+  </header>
   <body>
-    <h1>Welcome to The Voice of Hack The Box.</h1>
+    <div id="greeting">
+      <p>
+        Welcome to The Voice of Hack The Box's official webpage!
+        <br>
+        This webpage is setup as an archive and a hub all rolled into one!
+        <br>
+        Download any episode and find any social media from this one site!
+      </p>
+    </div>
+    <table>
+      <tr>
+        <th>Date</th>
+        <th>Name</th>
+        <th>Video</th>
+        <th>Audio</th>
+        <th>Link</th>
+        <th>YouTube</th>
+      </tr>
+      <tr>
+        <td>2024.07.24</td>
+        <td>Intro to Academy</td>
+        <td><img class="download-button" alt="Intro to Academy Video Download" onclick="window.location.href='https://github.com/VoHTB/VoHTB/raw/main/Episodes/Tier%200/Intro%20to%20Academy/Video/Intro%20To%20Academy.mkv?download='" src="imgs/download_icon_green.png"></td>
+        <td><img class="download-button" alt="Intro to Academy Audio Download" onclick="window.location.href='https://github.com/VoHTB/VoHTB/raw/main/Episodes/Tier%200/Intro%20to%20Academy/Audio/Intro%20To%20Academy.wav?download='" src="imgs/download_icon_green.png"></td>
+        <td><img class="download-button" alt="Intro to Academy Audio Download" onclick="window.location.href='https://github.com/VoHTB/VoHTB/raw/main/Episodes/Tier%200/Intro%20to%20Academy'" src="imgs/hyperlink_icon_green.png"></td>
+        <td><img class="download-button" alt="Intro to Academy Audio Download" onclick="window.location.href='https://youtu.be/D_uqZRRoyk4'" src="imgs/hyperlink_icon_green.png"></td>
+      </tr>
+    </table>
   </body>
+  <footer>
+    <div id="kofi-button">
+      <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
+      <script type='text/javascript'>kofiwidget2.init('Donate if you can!', '#6ca200', 'N4N310UHLR');kofiwidget2.draw();</script> <!-- Coded in a sweet, sweet cube-30 -->
+    </div>
+    <img id="vohtb-logo" alt="The Voice of Hack The Box Logo" src="imgs/VoHTB-logo_1300x1300.png">
+  </footer>
 </html>
+
+<style>
+  :root {
+    --cube-30: #6ca200;
+    --cube: #9fef00;
+    --background: #0a121f;
+  }
+
+  * {margin:0; padding:0;}
+
+  header {text-align: center; padding: 5vh 0 5vh 0; background-image: url("imgs/VoHTB-banner_background.png"); color: var(--cube); border-bottom: 1px var(--cube-30) dotted;}
+  #greeting {text-align: center; color: var(--cube-30); margin: 5vh 0}
+
+  body {background-color: var(--background);}
+
+  table {width: 50vw; margin: 5vh 25vw; border: 1px var(--cube-30) solid; padding: 10px; border-radius: 10px;}
+  table * {color: var(--cube)}
+  table th {color: var(--cube-30)}
+  th {text-align: left;}
+
+  footer {position: fixed; bottom:0; width:100vw; height: 15vh; border-top: 1px var(--cube-30) dotted; background-image: url("imgs/VoHTB-banner_background.png"); background-position: bottom;}
+  #vohtb-logo {height: 10vh; border-radius: 50%; border: 3px var(--cube-30) solid; position: absolute; bottom: 20px; right: 20px;}
+  #kofi-button {position: absolute; bottom: 20px; left: 20px;}
+
+  .download-button {width: 20px; cursor: pointer;}
+</style>
