@@ -1,7 +1,12 @@
 <!DOCTYPE html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/x-icon" href="imgs/VoHTB-logo_1300x1300.png">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="imgs/VoHTB-logo_1300x1300.png"> <!-- Favicon Upload-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
 
 <style>
   :root {
@@ -10,23 +15,33 @@
     --background: #0a121f;
   }
 
-  * {margin:0; padding:0;}
+  * {margin:0; padding:0; font-family: "Roboto", sans-serif;}
+  h1 {font-size: 4em;}
+  
+  header {text-align: center; padding: 5vh 0; background-image: url("imgs/VoHTB-banner_background.png"); color: var(--cube); border-bottom: 1px var(--cube-30) dotted;}
+  
+  body {background-color: var(--background); overflow-y: scroll;}
+  
+  #greeting, #table-container, h1 {padding: 0 5vw;}
+  #greeting {text-align: center; color: var(--cube-30); margin: 5vh auto; font-size: 1.5em;}
 
-  header {text-align: center; padding: 5vh 0 5vh 0; background-image: url("imgs/VoHTB-banner_background.png"); color: var(--cube); border-bottom: 1px var(--cube-30) dotted;}
-  #greeting {text-align: center; color: var(--cube-30); margin: 5vh 0}
+  #table-container {overflow-x: scroll;}
+  table {border: 1px var(--cube-30) solid; padding: 10px; border-radius: 10px; margin: 0 auto;}
+  table * {color: var(--cube); font-size: 1.1em;}
+  table th {color: var(--cube-30); text-align: left;}
+  table td:empty {width: 20px; min-width: 5px;}
 
-  body {background-color: var(--background);}
-
-  table {width: 50vw; margin: 5vh 25vw; border: 1px var(--cube-30) solid; padding: 10px; border-radius: 10px;}
-  table * {color: var(--cube)}
-  table th {color: var(--cube-30)}
-  th {text-align: left;}
+  #support-label {color: var(--cube-30); margin-top: 4vh; text-align: center;}
+  #support-container {overflow: hidden; text-align: center; margin: 1vh 0;}
+  #kofi-link, #join-htba {height: 5vh; cursor: pointer;}
 
   footer {position: fixed; bottom:0; width:100vw; height: 15vh; border-top: 1px var(--cube-30) dotted; background-image: url("imgs/VoHTB-banner_background.png"); background-position: bottom;}
-  #vohtb-logo {height: 10vh; border-radius: 50%; border: 3px var(--cube-30) solid; position: absolute; bottom: 20px; right: 20px;}
-  #kofi-button {position: absolute; bottom: 20px; left: 20px;}
+  #vohtb-logo {height: 10vh; border-radius: 50%; border: 3px var(--cube-30) solid; position: absolute; bottom: 2vh; right: 20px;}
 
+  .smaller-link-logos {height: 2vh;}
   .download-button {width: 20px; cursor: pointer;}
+
+  .cube-span {color: var(--cube);}
 </style>
 
 <html lang="en">
@@ -44,30 +59,54 @@
         Download any episode and find any social media from this one site!
       </p>
     </div>
-    <table>
-      <tr>
-        <th>Date</th>
-        <th>Name</th>
-        <th>Video</th>
-        <th>Audio</th>
-        <th>Link</th>
-        <th>YouTube</th>
-      </tr>
-      <tr>
-        <td>2024.07.24</td>
-        <td>Intro to Academy</td>
-        <td><img class="download-button" alt="Intro to Academy Video Download" onclick="window.location.href='https://github.com/VoHTB/VoHTB/raw/main/Episodes/Tier%200/Intro%20to%20Academy/Video/Intro%20To%20Academy.mkv?download='" src="imgs/download_icon_green.png"></td>
-        <td><img class="download-button" alt="Intro to Academy Audio Download" onclick="window.location.href='https://github.com/VoHTB/VoHTB/raw/main/Episodes/Tier%200/Intro%20to%20Academy/Audio/Intro%20To%20Academy.wav?download='" src="imgs/download_icon_green.png"></td>
-        <td><img class="download-button" alt="Intro to Academy Audio Download" onclick="window.location.href='https://github.com/VoHTB/VoHTB/raw/main/Episodes/Tier%200/Intro%20to%20Academy'" src="imgs/hyperlink_icon_green.png"></td>
-        <td><img class="download-button" alt="Intro to Academy Audio Download" onclick="window.location.href='https://youtu.be/D_uqZRRoyk4'" src="imgs/hyperlink_icon_green.png"></td>
-      </tr>
-    </table>
-  </body>
-  <footer>
-    <div id="kofi-button">
-      <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
-      <script type='text/javascript'>kofiwidget2.init('Donate if you can!', '#6ca200', 'N4N310UHLR');kofiwidget2.draw();</script> <!-- Coded in a sweet, sweet cube-30 -->
+    <div id="table-container">
+      <table>
+        <tr>
+          <th>Date</th>
+          <th></th>
+          <th>Name</th>
+          <th></th>
+          <th>HTBA</th>
+          <th></th>
+          <th>Video</th>
+          <th></th>
+          <th>Audio</th>
+          <th></th>
+          <th>Archive</th>
+          <th></th>
+          <th>YouTube</th>
+        </tr>
+        <tr>
+          <td>2024.07.24</td>
+          <td></td>
+          <td>Intro to Academy</td>
+          <td></td>
+          <td><img class="download-button" alt="Intro to Academy Hack The Box Academy Link" onclick="window.location.href='https://academy.hackthebox.com/module/details/15'" src="imgs/Cube-Icon_RGB_1024_edited.png"></td>
+          <td></td>
+          <td><img class="download-button" alt="Intro to Academy Video Download" onclick="window.location.href='https://github.com/VoHTB/VoHTB/raw/main/Episodes/Tier%200/Intro%20to%20Academy/Video/Intro%20To%20Academy.mkv?download='" src="imgs/download_icon_green.png"></td>
+          <td></td>
+          <td><img class="download-button" alt="Intro to Academy Audio Download" onclick="window.location.href='https://github.com/VoHTB/VoHTB/raw/main/Episodes/Tier%200/Intro%20to%20Academy/Audio/Intro%20To%20Academy.wav?download='" src="imgs/download_icon_green.png"></td>
+          <td></td>
+          <td><img class="download-button" alt="Intro to Academy GitHub Archive Link" onclick="window.location.href='https://github.com/VoHTB/VoHTB/raw/main/Episodes/Tier%200/Intro%20to%20Academy'" src="imgs/hyperlink_icon_green.png"></td>
+          <td></td>
+          <td><img class="download-button" alt="Intro to Academy YouTube Archive Link" onclick="window.location.href='https://youtu.be/D_uqZRRoyk4'" src="imgs/hyperlink_icon_green.png"></td>
+        </tr>
+      </table>
     </div>
+    <p id="support-label">Various Support Links:</p>
+    <div id="support-container">
+      <img id="kofi-link" alt="Support me on Ko-fi" onclick="window.location.href='https://ko-fi.com/thevoiceofhackthebox'" src="imgs/kofi_button_stroke.png">
+      <img id="join-htba" alt="Join Hack The Box Academy" onclick="window.location.href='https://referral.hackthebox.com/mz8Slbo'" src="imgs/join_htba_button.png">
+    </div>
+  </body>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <footer>
     <img id="vohtb-logo" alt="The Voice of Hack The Box Logo" src="imgs/VoHTB-logo_1300x1300.png">
   </footer>
 </html>
