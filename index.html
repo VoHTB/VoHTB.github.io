@@ -16,18 +16,18 @@
   }
 
   * {margin:0; padding:0; font-family: "Roboto", sans-serif;}
-  h1 {font-size: 4em;}
+  h1 {font-size: 3em;}
   
   header {text-align: center; padding: 5vh 0; background-image: url("imgs/VoHTB-banner_background.png"); color: var(--cube); border-bottom: 1px var(--cube-30) dotted;}
   
-  body {background-color: var(--background); overflow-y: scroll;}
+  body {background-color: var(--background);}
   
   #greeting, #table-container, h1 {padding: 0 5vw;}
-  #greeting {text-align: center; color: var(--cube-30); margin: 5vh auto; font-size: 1.5em;}
+  #greeting {text-align: center; color: var(--cube-30); margin: 5vh auto; font-size: 1.2em;}
 
   #table-container {overflow-x: scroll;}
   table {border: 1px var(--cube-30) solid; padding: 10px; border-radius: 10px; margin: 0 auto;}
-  table * {color: var(--cube); font-size: 1.1em;}
+  table * {color: var(--cube);}
   table th {color: var(--cube-30); text-align: left;}
   table td:empty {width: 20px; min-width: 5px;}
 
@@ -35,7 +35,6 @@
   #support-container {overflow: hidden; text-align: center; margin: 1vh 0;}
   #kofi-link, #join-htba, #join-discord {height: 4vh; cursor: pointer;}
 
-  footer {position: fixed; bottom:0; width:100vw; height: 15vh; border-top: 1px var(--cube-30) dotted; background-image: url("imgs/VoHTB-banner_background.png"); background-position: bottom;}
   #vohtb-logo {height: 10vh; border-radius: 50%; border: 3px var(--cube-30) solid; position: absolute; bottom: 2vh; right: 20px;}
 
   .smaller-link-logos {height: 2vh;}
@@ -52,11 +51,9 @@
   <body>
     <div id="greeting">
       <p>
-        Welcome to The Voice of Hack The Box's official webpage!
+        Welcome to <span class="cube-span">The Voice of Hack The Box</span>'s Official Webpage!
         <br>
-        This webpage is setup as an archive and a hub all rolled into one!
-        <br>
-        Download any episode and find any social media from this one site!
+        This webpage is setup as an archive that you can reach every other part of the operation from.
       </p>
     </div>
     <div id="table-container">
@@ -76,6 +73,7 @@
           <th></th>
           <th>YouTube</th>
         </tr>
+        <!-- Ah... Trying out your snooping skills, are you? -S -->
         <tr>
           <td>2024.07.24</td>
           <td></td>
@@ -100,15 +98,7 @@
       <img id="join-discord" alt="Join the Discord" onclick="window.location.href='https://discord.gg/ZCBFvhE7'" src="imgs/join_discord_button.png">
     </div>
   </body>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
   <footer>
     <img id="vohtb-logo" alt="The Voice of Hack The Box Logo" src="imgs/VoHTB-logo_1300x1300.png">
   </footer>
 </html>
-
